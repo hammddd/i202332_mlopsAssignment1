@@ -7,10 +7,10 @@ WORKDIR /app
 COPY requirements.txt .
 
 # Install any dependencies
-RUN pip3 install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the content of the local src directory to the working directory
 COPY . .
 
 # Specify the command to run on container start
-CMD ["python3", "flaskapi.py"]
+CMD ["python", "flaskapi.py"]

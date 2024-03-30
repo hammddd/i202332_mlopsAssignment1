@@ -1,4 +1,4 @@
 install:
 	pip3 install -r requirements.txt
 run:
-	python flaskapi.py
+	python3 flaskapi.py
